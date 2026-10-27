@@ -1,0 +1,9 @@
+CREATE DATABASE if NOT EXISTS lab8_login;
+
+USE lab8_login;
+CREATE TABLE users (
+id_user INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(100) NOT NULL,
+password_user VARCHAR(10) NOT NULL,
+email VARCHAR (150) NOT NULL UNIQUE
+)
